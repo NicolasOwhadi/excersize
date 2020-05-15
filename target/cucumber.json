@@ -1,0 +1,522 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-15T08:01:30.830Z",
+        "before": [
+          {
+            "result": {
+              "duration": 459087300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Add new deck of cards and verify status code 200, \"success\": true, \"remaining\": 52",
+        "description": "",
+        "id": "open-a-brand-new-deck-of-cards;add-new-deck-of-cards-and-verify-status-code-200--\"success\":-true--\"remaining\":-52",
+        "after": [
+          {
+            "result": {
+              "duration": 273800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1154700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "All parameters for a new deck of cards",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.the_deck_of_cards_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1756668800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I call in the GET new deck API",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_call_in_the_GET_new_deck_API()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2351500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify GET new deck response status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_new_deck_response_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 371375000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I verify GET response payload should contain \"success\": true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 45
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_response_payload_should_contain_true(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrandNewCards"
+          },
+          {
+            "name": "@FinraExcersize"
+          },
+          {
+            "name": "@newDeckOfCards"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-15T08:01:33.476Z",
+        "before": [
+          {
+            "result": {
+              "duration": 163100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "New deck of cards with two Jokers in the deck",
+        "description": "",
+        "id": "open-a-brand-new-deck-of-cards;new-deck-of-cards-with-two-jokers-in-the-deck",
+        "after": [
+          {
+            "result": {
+              "duration": 231600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 171453300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I call in the GET new deck API Query Params to create two Jokers in the deck",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_call_in_the_GET_new_deck_API_Query_Params_to_create_two_Jokers_in_the_deck()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 581700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I verify GET new deck response status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_new_deck_response_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23046800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I verify GET response payload should contain \"success\": true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 45
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_response_payload_should_contain_true(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrandNewCards"
+          },
+          {
+            "name": "@FinraExcersize"
+          },
+          {
+            "name": "@DeckOfCardsJoker"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-15T08:01:33.674Z",
+        "before": [
+          {
+            "result": {
+              "duration": 106700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Draw one or more cards from a deck",
+        "description": "",
+        "id": "open-a-brand-new-deck-of-cards;draw-one-or-more-cards-from-a-deck",
+        "after": [
+          {
+            "result": {
+              "duration": 812100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 108862100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I call in the GET new deck API",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_call_in_the_GET_new_deck_API()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 599700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I verify GET new deck response status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_new_deck_response_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22851300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify GET response payload should contain \"success\": true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 45
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_response_payload_should_contain_true(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8164100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am saving deck_id",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_am_saving_deck_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150475700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I draw one card from deck using \"deck_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deck_id\"",
+                  "offset": 32
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_draw_one_card_from_deck_using(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrandNewCards"
+          },
+          {
+            "name": "@FinraExcersize"
+          },
+          {
+            "name": "@drawOneCardFromDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-15T08:01:33.970Z",
+        "before": [
+          {
+            "result": {
+              "duration": 117100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Draw more cards from a deck",
+        "description": "",
+        "id": "open-a-brand-new-deck-of-cards;draw-more-cards-from-a-deck",
+        "after": [
+          {
+            "result": {
+              "duration": 170100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107132500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I call in the GET new deck API",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_call_in_the_GET_new_deck_API()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 392800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I verify GET new deck response status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_new_deck_response_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20740000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I verify GET response payload should contain \"success\": true",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"success\"",
+                  "offset": 45
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_verify_GET_response_payload_should_contain_true(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8315400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I am saving deck_id",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.i_am_saving_deck_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232835400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I draw 10 cards from deck using \"deck_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 7
+                },
+                {
+                  "val": "\"deck_id\"",
+                  "offset": 32
+                }
+              ],
+              "location": "DeckOfCardsApiStepDefs.i_draw_cards_from_deck_using(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrandNewCards"
+          },
+          {
+            "name": "@FinraExcersize"
+          },
+          {
+            "name": "@drawCardsFromDeck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-15T08:01:34.327Z",
+        "before": [
+          {
+            "result": {
+              "duration": 103400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Json schema validation",
+        "description": "",
+        "id": "open-a-brand-new-deck-of-cards;json-schema-validation",
+        "after": [
+          {
+            "result": {
+              "duration": 206700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 682429300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response json format should match the schema BrandNewDeck.json",
+            "match": {
+              "location": "DeckOfCardsApiStepDefs.the_response_json_format_should_match_the_schema_BrandNewDeck_json()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BrandNewCards"
+          },
+          {
+            "name": "@FinraExcersize"
+          },
+          {
+            "name": "@JS_schema"
+          }
+        ]
+      }
+    ],
+    "name": "Open a brand new deck of cards",
+    "description": "",
+    "id": "open-a-brand-new-deck-of-cards",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DeckOfCards.feature",
+    "tags": [
+      {
+        "name": "@BrandNewCards",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
