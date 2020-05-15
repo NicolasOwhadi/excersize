@@ -1,3 +1,4 @@
 # excersize
-Finra's Excercize
+Finra's Excercize:
+
 By using maven as a project built, I manage my dependencies and plug-ins in pom.xml, running my tests from command line. It is written in Java. I use IntelliJ IDE /IntelliJ in my company.  My framework uses JUnit for starting my tests and for assertions,I used Cucumber to write tests in feature file, organize test suites like @FinraExcercize, @api. My feature files are written in Gherkin language to make it easy to understand for nontechnical people. My framework generates HTML reports with exact steps from the feature file.  In my framework; Other than feature files, I have a runner class that runs my tests and helps to generate codes for step definition from my feature files. It also contains locations that show where my feature files and StepDefs (Glue) are. Step definition classes where I have my methods to execute feature files, Configuration Reader and properties file.Besides these, I have utility pages where I store my reusable codes. Lastly, I have hook class that implements my codes which run before and after all my tests
